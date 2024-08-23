@@ -1,5 +1,5 @@
 import groovy.json.JsonSlurper
-import groovy.json.JsonSurperClassic
+import groovy.json.JsonSlurperClassic
 
 def payload_json = readJSON text: "${payload}"
 
