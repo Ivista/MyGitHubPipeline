@@ -1,3 +1,9 @@
+import groovy.json.JsonSlurper
+import groovy.json.JsonSurperClassic
+
+def payload_json = readJSON text: "${payload}"
+
+
 pipeline {
     agent any
 
@@ -5,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello, World!'
+                echo "payload ${payload_json}"
             }
         }
     }
