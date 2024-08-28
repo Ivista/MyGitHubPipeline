@@ -1,7 +1,7 @@
 import groovy.json.JsonSlurper
 import groovy.json.JsonSlurperClassic
 
-def payload_json = readJSON text: "${payload}"
+def payload_json = readJSON text: "${env.json}"
 
 
 pipeline {
